@@ -1,0 +1,25 @@
+server:
+  port: 9000
+
+# spring datasource configuration
+spring:
+  datasource:
+    name: mysql
+    type: com.alibaba.druid.pool.DruidDataSource
+    druid:
+      driver-class-name: com.mysql.cj.jdbc.Driver
+      url: jdbc:mysql://123.207.1.119:3306/forrily?serverTimezone=UTC&useUnicode=true&characterEncoding=UTF-8&allowMultiQueries=true
+      username: root
+      password: linym6303763!
+      initial-size: 1
+      min-idle: 1
+      max-active: 20
+      max-wait: 60000
+      time-between-eviction-runs-millis: 60000
+      min-evictable-idle-time-millis: 300000
+      validation-query: SELECT 1
+      test-while-idle: true
+      test-on-borrow: false
+      test-on-return: false
+      pool-prepared-statements: false
+      max-pool-prepared-statement-per-connection-size: 20
